@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox Name="lbx_brani" HorizontalAlignment="Left" Height="368" Margin="10,41,0,0" VerticalAlignment="Top" Width="272"/>
+
+        <Button Name="btn_aggiungiBrano" Content="Aggiungi Brano" HorizontalAlignment="Left" Margin="336,161,0,0" VerticalAlignment="Top" Width="116" Height="42" Click="btn_aggiungiBrano_Click"/>
+
+        <Label Content="Brani:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Titolo:" HorizontalAlignment="Left" Margin="336,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Autore:" HorizontalAlignment="Left" Margin="336,86,0,0" VerticalAlignment="Top"/>
+        <Label Content="Durata:" HorizontalAlignment="Left" Margin="336,117,0,0" VerticalAlignment="Top"/>
+
+        <TextBox Name="tbx_titolo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="384,58,0,0"/>
+        <TextBox Name="tbx_autore" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="390,89,0,0"/>
+        <TextBox Name="tbx_brano" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="389,120,0,0"/>
+        <Label Name="lbl_durataTot" Content="" HorizontalAlignment="Left" Margin="429,224,0,0" VerticalAlignment="Top"/>
+        <Label Content="Durata Totale:" HorizontalAlignment="Left" Margin="341,224,0,0" VerticalAlignment="Top"/>
+        <Button Name="btn_tempoBranoMinoreDi" Content="Tempo brano minore di:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="341,267,0,0" Height="42" Click="btn_tempoBranoMinoreDi_Click"/>
+        <TextBox Name="tbx_tempoBranoMinoreDi" HorizontalAlignment="Left" Height="23" Margin="488,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
