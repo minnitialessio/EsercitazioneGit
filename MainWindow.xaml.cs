@@ -24,6 +24,9 @@ namespace EsercitazioneGit
         {
             InitializeComponent();
             cd = new CD("Doom", "Nayt");
+            Brano brano = new Brano("Doom", "Nayt", 180);
+            lbx_brani.Items.Add(brano);
+            cd.AggiungiBrano(brano);
 
             MessageBox.Show("Brani:\n" + cd);
 
@@ -37,10 +40,10 @@ namespace EsercitazioneGit
         {
             try
             {
-                Brano brano = new Brano("Doom", "Nayt", 180);
-                cd.AggiungiBrano(brano);
+                Brano b = new Brano(tbx_titolo.Text, tbx_autore.Text, int.Parse(tbx_brano.Text));
+                cd.AggiungiBrano(b);
 
-                lbx_brani.Items.Add(brano);
+                lbx_brani.Items.Add(b);
 
                 lbl_durataTot.Content = cd.DurataTot;
             }
@@ -63,11 +66,11 @@ namespace EsercitazioneGit
 
                 if (brano.ShortSong(tbx_tempoBranoMinoreDi.Text) == true) 
                 {
-                    MessageBox.Show("La durata del brano è minore");
+                    MessageBox.Show("La durata del brano è maggiore");
                 }
                 else
                 {
-                    MessageBox.Show("La durata del brano è maggiore");
+                    MessageBox.Show("La durata del brano è minore o uguale");
                 }
             }
             catch (Exception ex)

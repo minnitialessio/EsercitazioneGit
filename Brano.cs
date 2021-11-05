@@ -55,8 +55,8 @@ namespace EsercitazioneGit
                 if (value < 0)
                 {
                     throw new Exception("errore nell'inserimento della durata del brano  ");
-
                 }
+                _durataInSecondi = value;
             }
         }
         #endregion
